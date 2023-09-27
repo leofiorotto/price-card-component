@@ -11,6 +11,49 @@ body {
     height: 90vh;
 }
 
+nav {
+    display: inline-flex;
+    flex-direction: row;
+    gap: 1.9rem;
+    align-items: center;
+}
+  
+.toggle-area {
+    border: none;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    width: 3.8rem;
+    height: 2.3rem;
+    border-radius: 25px;
+    background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+  
+.toggle-btn {
+    cursor: pointer;
+    position: relative;
+    width: 1.7rem;
+    height: 1.7rem;
+    margin: 5%;
+    border-radius: 50%;
+    background-color:hsl(240, 78%, 98%);
+}
+  
+.toggle-area.monthly {
+    justify-content: flex-end;
+    align-content: flex-end;
+}
+  
+.toggle-area.anually {
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+  
+.toggle-section p {
+    color: hsl(234, 14%, 74%);
+}
+  
 
 .tittle {
     text-align: center;
@@ -35,13 +78,19 @@ body {
 .card {
     background-color: white;
     padding: 3rem;
-    border-radius: 2rem;
+    border-radius: 0.5rem;
     text-align: center;
+    width: 20%;
 }
 
-.card b {
-    font-size: 4.5rem;
-    padding-bottom: 3rem;
+.price {
+    font-size: 4rem;
+}
+
+.price-1, .price-3 {
+    font-size: 4rem;
+    color: black;
+    margin: 0;
 }
 
 .info-card {
@@ -56,7 +105,6 @@ body {
 .card-professional {
     padding-top: 5%;
     padding-bottom: 5%;
-    background-color: blue;
     background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
     color: white;
 }
@@ -73,4 +121,38 @@ hr {
     border-color: hsl(234, 14%, 74%);
     border-style: solid;
     opacity: 0.5;
+}
+
+.btn-learn-more {
+    cursor: pointer;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    border-radius: 5px;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 1px;
+    padding: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    word-spacing: 3px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.btn-basic, .btn-master {
+    color: white;
+    background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    background-repeat: no-repeat;
+}
+
+.btn-learn-more:hover {
+    background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    border: 1px solid hsl(0, 0%, 100%);
+}
+
+.btn-basic:hover, .btn-master:hover {
+    background: white;
+    color:hsl(236, 72%, 79%);
+    border: 1px solid hsl(236, 72%, 79%);
 }
