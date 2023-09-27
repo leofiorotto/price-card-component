@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+body {
+    background-image: url(images/bg-top.svg), url(images/bg-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top 0 right -1rem, bottom -4.7rem left -1.9rem;
+    overflow-y: scroll;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    background-color: hsl(240, 78%, 98%);
+    height: 90vh;
+}
+
+
+.tittle {
+    text-align: center;
+}
+
+.container-btn {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+
+.container-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+
+    
+}
+
+.card {
+    background-color: white;
+    padding: 3rem;
+    border-radius: 2rem;
+    text-align: center;
+}
+
+.card b {
+    font-size: 4.5rem;
+    padding-bottom: 3rem;
+}
+
+.info-card {
+    margin-top: 3rem;
+    margin-bottom: 2.5rem;
+}
+
+.card p {
+    color: hsl(234, 14%, 74%);
+}
+
+.card-professional {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: blue;
+    background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    color: white;
+}
+
+.info-card-profesional p {
+    color: white;
+}
+
+hr {
+    width: 90%;
+    border-width: 0.5px;
+    margin: 0 auto;
+    border-color: transparent;
+    border-color: hsl(234, 14%, 74%);
+    border-style: solid;
+    opacity: 0.5;
+}
